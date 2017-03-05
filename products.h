@@ -15,6 +15,7 @@ public:
 	virtual void				plusToCnt(int n) { cnt_ += n; };
 	virtual int					getCnt() { return cnt_; }
 	virtual string				getName() { return name_; }
+	~Products () {};
 protected:
 	int cnt_;
 	string name_;
@@ -29,6 +30,7 @@ public:
 	virtual void				plusToCnt(int n) override { Products::plusToCnt(n); }
 	virtual int					getCnt() override { return Products::getCnt(); }
 	virtual string				getName() override { return Products::getName(); }
+	~Eating () {};
 protected:
 };
 
@@ -39,6 +41,7 @@ public:
 	virtual void				plusToCnt(int n)override { Products::plusToCnt(n); }
 	virtual int					getCnt() override { return Products::getCnt(); }
 	virtual string				getName() override { return Products::getName(); }
+	~Drinking () {};
 protected:
 };
 
@@ -49,6 +52,7 @@ public:
 	virtual void				plusToCnt(int n) override { Products::plusToCnt(n); }
 	virtual int					getCnt()override { return Products::getCnt(); }
 	virtual string				getName() override { return Products::getName(); }
+	~Cookies () {};
 protected:
 	string kind_;
 };
@@ -60,6 +64,7 @@ public:
 	virtual void				plusToCnt(int n)override { Products::plusToCnt(n); }
 	virtual int					getCnt() override { return Products::getCnt(); }
 	virtual string				getName() override{ return Products::getName(); }
+	~Breads () {};
 protected:
 	string kind_;
 };
@@ -71,6 +76,7 @@ public:
 	virtual void				plusToCnt(int n) override { Products::plusToCnt(n); }
 	virtual int					getCnt() override { return Products::getCnt(); }
 	virtual string				getName() override { return Products::getName(); }
+	~Water () {};
 protected:
 	int V_;
 };
@@ -82,6 +88,7 @@ public:
 	virtual void				plusToCnt(int n) override{ Products::plusToCnt(n); }
 	virtual int					getCnt() override{ return Products::getCnt(); }
 	virtual string				getName() override { return Products::getName(); }
+	Alcohol () {};
 protected:
 	int V_, alcoPercent_;
 };
